@@ -80,3 +80,93 @@ This is the architectural backbone of the project.
 
 Next Step:
 Create mongo.js to establish the MongoDB connection layer.
+
+---
+
+# Project Structure (Current State)
+
+network-traffic-visualizer/
+  backend/
+    package.json
+    src/
+      server.js
+
+---
+
+# Backend Configuration Details
+
+## package.json
+
+The backend project was initialized using:
+
+    npm init -y
+
+We configured:
+
+    "type": "module"
+
+This allows us to use modern ES Module syntax:
+
+    import express from "express";
+
+instead of CommonJS:
+
+    const express = require("express");
+
+Dependencies installed:
+
+- express (web framework)
+- cors (cross-origin support)
+- dotenv (environment variables)
+- ws (WebSocket support)
+- mongoose (MongoDB integration)
+
+---
+
+# Development Environment Setup
+
+The backend is running inside:
+
+- WSL (Windows Subsystem for Linux)
+- Ubuntu
+- Node.js v24+
+
+Git was configured with:
+
+- user.name
+- user.email
+
+The repository is connected to:
+
+https://github.com/ParticleGeorge/3d-Force-Graph-Project
+
+---
+
+# Current System Status
+
+✔ Backend project initialized  
+✔ ES Modules configured  
+✔ Dependencies installed  
+✔ server.js implemented  
+✔ GitHub repository connected  
+✔ Initial commit pushed  
+
+---
+
+# Architectural Notes
+
+We are building this system from the inside out:
+
+1. Infrastructure (server.js)
+2. Persistence layer (MongoDB)
+3. Real-time communication (WebSocket)
+4. Data modeling (Packet schema)
+5. Traffic simulation
+6. Visualization layer
+
+This approach ensures the data pipeline is solid before building UI components.
+
+---
+
+Next Step:
+Create backend/src/mongo.js to establish the database connection layer.
