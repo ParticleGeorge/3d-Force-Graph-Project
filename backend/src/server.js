@@ -5,7 +5,7 @@ import http from "http";                    // http is used to create the server
 import express from "express";              // express handles getting requests and sending responses
 import cors from "cors";                    // cors is used to connect the frontend and backend servers together
 import dotenv from "dotenv";                // dotenv is used to load environment variables from a .env file
-import connectMongo from ".mongo.js";       // connectMongo is used to connect to the MongoDB database
+import connectMongo from "./mongo.js";       // connectMongo is used to connect to the MongoDB database
 import initializeWebSocket from "./ws.js";  // initializeWebSocket is to set up the WebSocket server for real-time communication
 
 // load environment variables from .env file

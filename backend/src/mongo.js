@@ -8,7 +8,7 @@ import mongoose from "mongoose";  // mongoose is used to connect to MongoDB and 
 const connectMongo = async () => {
 
     // get database connection string from environment variables
-    const uri = process.env.MONGO_URI;
+    const uri = process.env.MONGODB_URI;
 
     // If no URI is provided, log an error and exit
     if (!uri) {
